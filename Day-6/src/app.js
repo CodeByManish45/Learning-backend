@@ -22,22 +22,35 @@ app.post("/user",async(req,res)=>{
 
 app.get("/user",async(req,res)=>{
 
-    const users =await userModel.find()
+    try {
+        const users =await userModel.find()
 
     res.status(200).json({
         message:"data fatched",users
     })
+    } catch (error) {
+        res.status(500).json({
+            message:"Error occurred while fetching data"
+        })
+    }
 })
 
 app.delete("/user/:id", async (req, res) => {
 
-    await userModel.findByIdAndDelete(req.params.id);
+    try {
+        await userModel.findByIdAndDelete(req.params.id);
 
-    res.json({
-        message: "User deleted successfully"
-    });
-
+        res.json({
+            message: "User deleted successfully"
+        });
+    } catch (error) {
+        res.status(500).json({
+            message: "Error occurred while deleting user"
+        });
+    }
 });
+
+
 
 
 
