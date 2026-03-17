@@ -1,0 +1,89 @@
+body {
+  font-family: system-ui, -apple-system;
+  background: #e6c9c3;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 200px;
+  font-size: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.small {
+  width: 80px;
+}
+
+.code {
+  width: 60px;
+}
+
+textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#Country-code {
+  width: 40px;
+  padding: 6px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+button:active {
+  background-color: green;
+  scale: 0.98;
+  border: none;
+}

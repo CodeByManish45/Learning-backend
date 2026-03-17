@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form class="form">
+
+<div class="row">
+<label>Roll no. :</label>
+<input type="text" name="Rollno">
+</div>
+
+<div class="row">
+<label>Student name :</label>
+<input type="text" placeholder="First Name" name="Firstname">
+<span>-</span>
+<input type="text" placeholder="Last Name" name="Lastname">
+</div>
+
+<div class="row">
+<label>Father's name :</label>
+<input type="text" name="Fathername">
+</div>
+
+<div class="row">
+<label>Date of birth :</label>
+<input type="date" name="Dateofbirth" >
+</div>
+
+<div class="row">
+<label>Mobile no. :</label>
+<div id="Country-code">+91</div>
+<span>-</span>
+<input type="text" name="Mobileno">
+</div>
+
+<div class="row">
+<label>Email id :</label>
+<input type="email" name="Email">
+</div>
+
+<div class="row">
+<label>Password :</label>
+<input type="password" name="Password">
+</div>
+
+<div class="row">
+<label>Gender :</label>
+<input type="radio" name="Gender" value="Male"> Male
+<input type="radio" name="Gender" value="Female"> Female
+</div>
+
+<div class="row">
+<label>Department :</label>
+<input type="radio" name="Department" value="CSE"> CSE
+<input type="radio" name="Department" value="IT"> IT
+<input type="radio" name="Department" value="ECE"> ECE
+<input type="radio" name="Department" value="Civil"> Civil
+<input type="radio" name="Department" value="M.tech"> M.tech
+</div>
+
+<div class="row">
+<label>Course :</label>
+<select name="Course">
+<option value="">------ Select Current Course's ------</option>
+<option value="B.Tech">B.Tech</option>
+<option value="BCA">BCA</option>
+<option value="MCA">MCA</option>
+<option value="BBA">BBA</option>
+</select>
+</div>
+
+<div class="row">
+<label>City :</label>
+<input type="text" name="City">
+</div>
+
+<div class="row">
+<label>Address :</label>
+<textarea rows="4" name="Address"></textarea>
+</div>
+
+<div class="btn">
+<button type="submit">Register</button>
+</div>
+
+</form>
+
+<script src="formhandle.js"></script>
+
+</body>
+</html>
